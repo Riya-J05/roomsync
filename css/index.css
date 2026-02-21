@@ -9,16 +9,14 @@ body {
 /* ================= NAVBAR ================= */
 
 .navbar {
-  position: sticky; /* Makes navbar stick while scrolling */
-  top: 0; /* Stick to top */
-  z-index: 1000; /* Keeps it above other elements */
-
-  display: flex; /* Align items in a row */
-  justify-content: space-between; /* Space between logo & button */
+  position: sticky; /* makes navbar stick while scrolling */
+  top: 0; /* to stick navbar to top */
+  z-index: 1000; /* to keeps it above other elements while scrolling */
+  display: flex; /* to align items in a row */
+  justify-content: space-between; /* to give enough space between contents */
   align-items: center;
-
   padding: 15px 60px;
-  background-color: #f4f1ebd7; /* Same as body for seamless look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* for shadow effect*/
 }
 
 /* logo box containing website name and logo */
@@ -85,26 +83,66 @@ body {
 
 /* check compatibility button: hover */
 .check-comp-btn:hover {
-  background-color: #4f5d6b;
+  background-color: #657993;
 }
 
-/* Container for logo + heading */
-.heading-section {
-  display: flex;
-  align-items: center;
-}
+/* ================= HERO SECTION ================= */
 
 /* heading font */
 h1 {
-  font-family: "Cormorant Garamond", serif; /* Elegant serif font */
+  font-family: "Cormorant Garamond", serif;
   font-size: 80px;
   font-weight: 500;
   margin: 0;
+  line-height: 1; /* to adjust the vertical space between words  */
 }
 
 /* 'perfect' word styling */
 .perfect {
-  font-family: "Playfair Display", serif; /* Different font for contrast */
+  font-family: "Playfair Display", serif; /* different font for contrast */
   font-style: italic;
-  color: #6c7a89; /* soft blue-grey */
+  color: #657993; /* different colour for contrast */
+}
+
+/* hero subtext */
+.hero-subtext {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  color: #5a6a7a;
+  max-width: 480px; /* to prevent long stretched line */
+  margin-top: 25px;
+  line-height: 1.6; /* to adjust vertical space between lines */
+}
+
+/* hero buttons */
+.hero-buttons {
+  display: flex; /* Places buttons side by side */
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px; /* Space above buttons */
+}
+
+/* hero button 2 */
+.hero-btn-2 {
+  text-decoration: none; /* to remove underline from btn text */
+  background-color: transparent;
+  color: #6c7a89;
+  border: 1.5px solid #6c7a89; /* border styling */
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 15px;
+}
+
+/* hero section container */
+.hero {
+  display: flex; /* heading and image in a straight line */
+  justify-content: space-between; /* to push heading left, image right */
+  align-items: center;
+  padding: 80px 60px;
+  gap: 50px;
+}
+
+/* hero image styling */
+.hero-image img {
+  border-radius: 100px;
 }
