@@ -1,0 +1,33 @@
+body {
+  background-color: #f4f1eb;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  max-width: 800px;
+}
+
+.form-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.form-title em {
+  color: #657993;
+}
+
+.form-section {
+  display: flex;
+  gap: 50px;
+}
+
+.roommate-card {
+  flex: 1;
+  background: #faf8f3;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #eaeaea;
+}

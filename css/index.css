@@ -1,0 +1,110 @@
+/* ================= BODY ================= */
+
+body {
+  background-color: #f4f1eb;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: sticky; /* Makes navbar stick while scrolling */
+  top: 0; /* Stick to top */
+  z-index: 1000; /* Keeps it above other elements */
+
+  display: flex; /* Align items in a row */
+  justify-content: space-between; /* Space between logo & button */
+  align-items: center;
+
+  padding: 15px 60px;
+  background-color: #f4f1ebd7; /* Same as body for seamless look */
+}
+
+/* logo box containing website name and logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* logo name */
+.logo a {
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+/* logo image */
+.logo img {
+  height: 30px;
+}
+
+/* different color for word "Sync" */
+.logo span {
+  color: #6c7a89;
+  font-style: italic;
+}
+
+/* container for nav links */
+.nav-links {
+  list-style: none; /* to remove bullets from the start */
+  display: flex; /* to centre links in one straight nav bar */
+  gap: 40px; /* space between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* nav link styling */
+.nav-links a {
+  text-decoration: none; /* to remove underlines from the links */
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 15px;
+  color: #5a6a7a;
+  transition: color 0.3s ease; /* for a good hover effect transition */
+}
+
+/* nav bar links: hover effect */
+.nav-links a:hover {
+  color: #2c2c2c;
+}
+
+/* check compatibility button */
+.check-comp-btn {
+  text-decoration: none; /* to remove underline from btn text */
+  background-color: #6c7a89;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px; /* to give a round pill-like shape */
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease; /* for hover effects */
+}
+
+/* check compatibility button: hover */
+.check-comp-btn:hover {
+  background-color: #4f5d6b;
+}
+
+/* Container for logo + heading */
+.heading-section {
+  display: flex;
+  align-items: center;
+}
+
+/* heading font */
+h1 {
+  font-family: "Cormorant Garamond", serif; /* Elegant serif font */
+  font-size: 80px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* 'perfect' word styling */
+.perfect {
+  font-family: "Playfair Display", serif; /* Different font for contrast */
+  font-style: italic;
+  color: #6c7a89; /* soft blue-grey */
+}
