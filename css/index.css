@@ -11,11 +11,12 @@ body {
 .navbar {
   position: sticky; /* makes navbar stick while scrolling */
   top: 0; /* to stick navbar to top */
-  z-index: 1000; /* to keeps it above other elements while scrolling */
+  z-index: 1000; /* to keep it above other elements while scrolling */
   display: flex; /* to align items in a row */
   justify-content: space-between; /* to give enough space between contents */
   align-items: center;
   padding: 15px 60px;
+  background-color: #f4f1eb;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* for shadow effect*/
 }
 
@@ -72,18 +73,17 @@ body {
 /* check compatibility button */
 .check-comp-btn {
   text-decoration: none; /* to remove underline from btn text */
-  background-color: #6c7a89;
+  background-color: #4f6275;
   color: white;
   padding: 10px 20px;
   border-radius: 30px; /* to give a round pill-like shape */
   font-family: "Plus Jakarta Sans", serif;
   font-size: 15px;
-  transition: background-color 0.3s ease; /* for hover effects */
+  transition: box-shadow 0.3s ease; /* for box shadow of btn */
 }
 
-/* check compatibility button: hover */
 .check-comp-btn:hover {
-  background-color: #657993;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ================= HERO SECTION ================= */
@@ -125,12 +125,23 @@ h1 {
 .hero-btn-2 {
   text-decoration: none; /* to remove underline from btn text */
   background-color: transparent;
-  color: #6c7a89;
-  border: 1.5px solid #6c7a89; /* border styling */
+  color: #4f6275;
+  border: 1.5px solid #4f6275; /* border styling */
   padding: 12px 24px;
   border-radius: 30px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 15px;
+  /* multiple transitions */
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.hero-btn-2:hover {
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  background-color: #4f6275;
+  color: white;
 }
 
 /* hero section container */
@@ -145,4 +156,157 @@ h1 {
 /* hero image styling */
 .hero-image img {
   border-radius: 100px;
+}
+
+/* ================= FEATURE STRIP ================= */
+
+/* full width strip below hero section */
+.feature-strip {
+  background-color: #4f6275; /* bluish background to create contrast */
+  padding: 16px 0px;
+  display: flex;
+  justify-content: center; /* horizontal align */
+  align-items: center; /* vertical align */
+  gap: 30px; /* gap between items in features strip */
+}
+
+/* each individual feature (icon and text pair!) */
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* gap between icon and feature*/
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* icon styling */
+.feature-icon {
+  font-size: 17px; /* slightly bigger than text */
+}
+
+/* ================= HOW IT WORKS SECTION ================= */
+
+.how-it-works {
+  padding: 100px 60px;
+  background-color: #f4f1eb;
+}
+
+/* main heading */
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0; /* to eliminate margin from top */
+  color: #2c2c2c;
+}
+
+/* container holding all step cards */
+.steps-container {
+  margin-top: 70px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between; /* to have equal space between cards */
+}
+
+/* individual step card */
+.step-card {
+  flex: 1; /* to make all cards have equal width */
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 25px;
+  position: relative; /* parent box */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease; /* to make hover effect better */
+}
+
+/* step card: hover effect */
+.step-card:hover {
+  box-shadow: 15px 30px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* step numbers on the cards */
+.step-number {
+  position: absolute; /* css positioning according to parent div! */
+  top: 20px;
+  right: 25px;
+  font-size: 60px;
+  font-family: "Cormorant Garamond", serif;
+  color: rgba(108, 122, 137, 0.4); /* alpha - for a light faded number  */
+}
+
+/* icon styling */
+.step-icon {
+  font-size: 26px;
+}
+
+/* step title */
+.step-card h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #2c2c2c;
+}
+
+/* step description */
+.step-card p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: #5a6a7a;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* ================= WHO's IT FOR SECTION ================= */
+
+.who-section {
+  padding: 100px 60px;
+}
+
+/* container holding all audience cards */
+.who-container {
+  margin-top: 70px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between; /* for equal spacing in-between them */
+}
+
+/* individual audience card */
+.who-card {
+  flex: 1; /* equal width */
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+/* hover effect for audience cards */
+.who-card:hover {
+  box-shadow: 15px 30px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* icon styling */
+.who-icon {
+  font-size: 30px;
+}
+
+/* audience title */
+.who-card h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #2c2c2c;
+}
+
+/* audience description */
+.who-card p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: #5a6a7a;
+  margin-top: 15px;
+  line-height: 1.6;
 }
