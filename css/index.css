@@ -259,6 +259,78 @@ h1 {
   line-height: 1.6;
 }
 
+/* ================= WHAT WE SOLVE SECTION ================= */
+
+.solve-section {
+  padding: 100px 60px;
+  background-color: #ebe6d8; /* warm colour for contrast */
+  display: flex;
+  gap: 80px;
+}
+
+/* left content column */
+.solve-left {
+  max-width: 520px; /* so that text doesn't form a single big line */
+}
+
+/* solve heading */
+.solve-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 65px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.1;
+  color: #2c2c2c;
+}
+
+/* grid holding conflict cards */
+.solve-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* 2 cols of equal length - responsive! */
+  gap: 25px;
+}
+
+/* individual conflict card */
+.solve-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 26px;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+/* hover effect */
+.solve-card:hover {
+  box-shadow: 15px 30px 45px rgba(0, 0, 0, 0.1);
+}
+
+/* icon for cards */
+.solve-icon {
+  font-size: 23px;
+}
+
+/* card title */
+.solve-card h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  margin: 0; /* to remove all margin! make text look aligned */
+  color: #2c2c2c;
+}
+
+/* card description */
+.solve-card p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 8px;
+  color: #5a6a7a;
+  line-height: 1.5;
+}
+
 /* ================= WHO's IT FOR SECTION ================= */
 
 .who-section {
