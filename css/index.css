@@ -382,3 +382,48 @@ h1 {
   margin-top: 15px;
   line-height: 1.6;
 }
+
+/* ================= LAST SECTION ================= */
+
+.last-section {
+  background-color: #4f6275;
+  padding: 100px 60px;
+  text-align: center; /* center everything! */
+}
+
+/* main heading */
+.last-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+/* tag line of website */
+.tag-line {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8); /* slightly faded white */
+  margin: 30px 0;
+}
+
+/* button styling */
+.last-section .check-comp-btn {
+  background-color: white;
+  color: #4f6275;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
