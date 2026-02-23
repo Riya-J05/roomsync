@@ -1,33 +1,91 @@
+/* ================= BODY ================= */
+
 body {
   background-color: #f4f1eb;
+  margin: 0;
   padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f4f1eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.logo span {
+  color: #6c7a89;
+  font-style: italic;
+}
+
+/* Back link */
+.back-home-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #5a6a7a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+  color: #2c2c2c;
+}
+
+/* ================= HERO SECTION ================= */
+
+.form-hero {
+  margin: 70px auto;
+  max-width: 750px;
+}
+
+.form-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #2c2c2c;
   margin: 0;
 }
 
-.hero-section {
-  margin-top: 120px;
-  margin-bottom: 60px;
-  max-width: 800px;
-}
-
-.form-title {
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.form-title em {
+.highlight {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
   color: #657993;
 }
 
-.form-section {
-  display: flex;
-  gap: 50px;
-}
-
-.roommate-card {
-  flex: 1;
-  background: #faf8f3;
-  padding: 30px;
-  border-radius: 16px;
-  border: 1px solid #eaeaea;
+.form-subtext {
+  font-size: 17px;
+  color: #5a6a7a;
+  margin-top: 25px;
+  line-height: 1.6;
+  max-width: 600px;
 }
