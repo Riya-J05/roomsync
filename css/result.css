@@ -1,0 +1,112 @@
+/* ================= BODY ================= */
+body {
+  background-color: #f4f1eb;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky; /* sticks to a position */
+  top: 0; /* to attach navbar to the top */
+  z-index: 1000; /* so that navbar comes over all the other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f4f1eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.logo {
+  display: flex; /* to align website name and logo image with each other */
+  align-items: center; /* vertical align */
+  gap: 10px;
+}
+
+.logo a {
+  text-decoration: none; /* to remove underline from 'RoomSync' link */
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.logo span {
+  color: #6c7a89;
+  font-style: italic;
+}
+
+/* Back to home link */
+.back-home-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #5a6a7a;
+  display: flex; /* to align icon and link text in a straight line */
+  align-items: center; /* vertically aligned */
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.back-home-link:hover {
+  color: #2c2c2c;
+}
+
+/*  ================= HERO SECTION ================= */
+.hero-section {
+  text-align: center; /* to align the main text horizonatlly on the center */
+  padding: 50px 0;
+}
+
+.hero-text h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#compatibility-score {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  color: #6f7f95;
+  font-weight: 600;
+}
+
+.hero-text p {
+  max-width: 600px; /* to make text appear wrapped */
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* special images shown according to compatibility score! */
+.compatibility-image-div {
+  margin-top: 30px;
+  text-align: center; /* ensures image stays centered */
+}
+
+.compatibility-image-div img {
+  width: 280px;
+  display: none; /* to hide all images by default - make em appear later by js */
+  margin: 0 auto;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2c2c2c;
+}

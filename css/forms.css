@@ -1,5 +1,4 @@
 /* ================= BODY ================= */
-
 body {
   background-color: #f4f1eb;
   margin: 0;
@@ -8,7 +7,6 @@ body {
 }
 
 /* ================= NAVBAR ================= */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -88,4 +86,18 @@ body {
   margin-top: 25px;
   line-height: 1.6;
   max-width: 600px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2c2c2c;
 }
