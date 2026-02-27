@@ -59,7 +59,6 @@ body {
 }
 
 /* ================= HERO SECTION ================= */
-
 .form-hero {
   margin: 70px auto;
   max-width: 750px;
@@ -74,7 +73,7 @@ body {
   margin: 0;
 }
 
-.highlight {
+.compatibility-word {
   font-family: "Playfair Display", serif;
   font-style: italic;
   color: #657993;
@@ -86,6 +85,128 @@ body {
   margin-top: 25px;
   line-height: 1.6;
   max-width: 600px;
+}
+
+/* ================= FORM SECTION ================= */
+.container {
+  display: flex;
+  flex-direction: column; /* to stack both forms side by side */
+  max-width: 1000px;
+  margin: 120px auto;
+
+  width: 90%;
+}
+
+.form-card {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin-bottom: 40px; /* Space between form cards */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+.section-header {
+  display: flex; /* to align section number and section name side by side */
+  align-items: center; /* vertical align */
+  justify-content: center;
+  gap: 10px;
+}
+
+.number {
+  font-size: 35px;
+  color: #999;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.section-header h2 {
+  font: "Plus Jakarta Sans", serif;
+  padding-top: 10px; /* to align number and heading vertically */
+  font-size: 26px;
+  color: #4d4d4d;
+}
+
+.grid-container {
+  display: flex; /* to align the two forms side by side */
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  background-color: #f3f0e9;
+  padding: 15px 30px 35px 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  min-width: none; /* Allow columns to shrink below 300px if needed */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+.column h3 {
+  font-size: 22px;
+}
+
+/* name labels */
+.column label {
+  font-size: 20px;
+}
+
+/* name inputs */
+#nameA,
+#nameB {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px rgb(85, 85, 85) solid; /* border for name inputs */
+  font-size: 16px;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.results {
+  width: 820px;
+  background-color: #657993;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.results h2 {
+  font-size: 2.2rem;
+  font-family: serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background: transparent;
+}
+.results p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  line-height: 1.5;
+  background: transparent;
+}
+.result-btn {
+  color: #333;
+  background-color: #f5f5f0;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.result-btn:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
 }
 
 /* ================= FOOTER ================= */

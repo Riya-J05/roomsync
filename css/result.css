@@ -72,11 +72,13 @@ body {
   margin-bottom: 20px;
 }
 
-#compatibility-score {
+#compatibility-score,
+.percentage {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   color: #6f7f95;
   font-weight: 600;
+  font-size: 64px;
 }
 
 .hero-text p {

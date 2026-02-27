@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap -->
     <link
@@ -46,7 +50,7 @@
       <h1 class="form-heading">
         <i class="bi bi-heart-pulse hero-icon"></i>
         Let's check your <br />
-        <span class="compatibility">compatibility</span>
+        <span class="compatibility-word">compatibility</span>
       </h1>
 
       <p class="form-subtext">
@@ -54,5 +58,238 @@
         it's to understand habits early and avoid silent frustration later.
       </p>
     </div>
+
+    <!-- form section -->
+    <main class="container">
+      <form id="compatibilityForm">
+        <!-- 01 BASIC INFO -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">01</span>
+            <h2>Basic Information</h2>
+          </div>
+          <p>
+            Start with the basics — just your names so we can personalize the
+            results.
+          </p>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <div class="input-group">
+                <label>Your name:</label>
+                <input
+                  type="text"
+                  id="nameA"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <div class="input-group">
+                <label>Your name:</label>
+                <input
+                  type="text"
+                  id="nameB"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 SLEEP -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">02</span>
+            <h2>Sleep Schedule</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <!-- names for all radio buttons of the same category should be same! -->
+              <input type="radio" name="sleepA" value="early" required /> Early
+              Bird <input type="radio" name="sleepA" value="late" /> Night Owl
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <input type="radio" name="sleepB" value="early" required /> Early
+              Bird <input type="radio" name="sleepB" value="late" /> Night Owl
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 CLEAN -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">03</span>
+            <h2>Cleanliness Standards</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <input type="radio" name="cleanA" value="daily" required /> Daily
+              <input type="radio" name="cleanA" value="weekly" /> 2–3 times per
+              week <input type="radio" name="cleanA" value="relaxed" /> Relaxed
+              approach
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <input type="radio" name="cleanB" value="daily" required /> Daily
+              <input type="radio" name="cleanB" value="weekly" /> 2–3 times per
+              week <input type="radio" name="cleanB" value="relaxed" /> Relaxed
+              approach
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 NOISE -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">04</span>
+            <h2>Noise Tolerance</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <input type="radio" name="noiseA" value="quiet" required /> Quiet
+              <input type="radio" name="noiseA" value="moderate" /> Moderate
+              <input type="radio" name="noiseA" value="loud" /> Loud
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <input type="radio" name="noiseB" value="quiet" required /> Quiet
+              <input type="radio" name="noiseB" value="moderate" /> Moderate
+              <input type="radio" name="noiseB" value="loud" /> Loud
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 GUESTS -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">05</span>
+            <h2>Guests & Privacy</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <input type="radio" name="guestsA" value="rarely" required />
+              Rarely
+              <input type="radio" name="guestsA" value="occasionally" />
+              Occasionally
+              <input type="radio" name="guestsA" value="frequently" />
+              Frequently
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <input type="radio" name="guestsB" value="rarely" required />
+              Rarely
+              <input type="radio" name="guestsB" value="occasionally" />
+              Occasionally
+              <input type="radio" name="guestsB" value="frequently" />
+              Frequently
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 FOOD & HABITS -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">06</span>
+            <h2>Food & Lifestyle Habits</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <label>Food</label>
+              <input type="radio" name="foodA" value="veg" required /> Veg
+              <input type="radio" name="foodA" value="nonveg" /> Non-Veg
+              <input type="radio" name="foodA" value="flexible" /> Flexible
+
+              <label>Smoking/Drinking</label>
+              <input type="radio" name="smokingA" value="non-smoker" required />
+              Non-smoker
+              <input type="radio" name="smokingA" value="occasional" />
+              Occasional
+              <input type="radio" name="smokingA" value="regular" /> Regular
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <label>Food</label>
+              <input type="radio" name="foodB" value="veg" required /> Veg
+              <input type="radio" name="foodB" value="nonveg" /> Non-Veg
+              <input type="radio" name="foodB" value="flexible" /> Flexible
+
+              <label>Smoking/Drinking</label>
+              <input type="radio" name="smokingB" value="non-smoker" required />
+              Non-smoker
+              <input type="radio" name="smokingB" value="occasional" />
+              Occasional
+              <input type="radio" name="smokingB" value="regular" /> Regular
+            </div>
+          </div>
+        </div>
+
+        <!-- 07 CONFLICT -->
+        <div class="form-card">
+          <div class="section-header">
+            <span class="number">07</span>
+            <h2>Conflict Handling Style</h2>
+          </div>
+
+          <div class="grid-container">
+            <div class="column">
+              <h3>Roommate A</h3>
+              <input type="radio" name="conflictA" value="direct" required />
+              Direct
+              <input type="radio" name="conflictA" value="compromise" /> Think
+              then discuss
+              <input type="radio" name="conflictA" value="avoid" /> Avoid
+            </div>
+
+            <div class="column">
+              <h3>Roommate B</h3>
+              <input type="radio" name="conflictB" value="direct" required />
+              Direct
+              <input type="radio" name="conflictB" value="compromise" /> Think
+              then discuss
+              <input type="radio" name="conflictB" value="avoid" /> Avoid
+            </div>
+          </div>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="results">
+          <h2>Ready to see your results?</h2>
+          <button type="submit" class="result-btn">
+            Generate Compatibility Report
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+      <p>Made with ❤️ for Code Crucible &sdot; Namespace</p>
+      <p>Riya Johari &sdot; Hiteshi Yadav</p>
+    </footer>
+
+    <!-- linking JS file -->
+    <script src="js/forms.js"></script>
   </body>
 </html>
