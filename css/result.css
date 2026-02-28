@@ -97,7 +97,52 @@ body {
 .compatibility-image-div img {
   width: 280px;
   display: none; /* to hide all images by default - make em appear later by js */
-  margin: 0 auto;
+  margin: 0 auto; /* center horizontally */
+  border-radius: 30px;
+}
+
+#compatibility-message {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 40px auto; /* center horizontally */
+  color: #657993;
+}
+
+/* ================= RETRY SECTION ================= */
+.retry-section {
+  background-color: #6f7f95;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.retry-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.retry-content p {
+  font-size: 20px;
+  color: #f4f1eb;
+  max-width: 600px; /* to wrap the text in a para-like structure */
+  margin: 30px auto; /* center horizontally */
+  line-height: 1.6;
+}
+
+.retry-btn {
+  text-decoration: none;
+  background-color: #f4f1eb;
+  color: #2c2c2c;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.retry-btn:hover {
+  background-color: #ffffff;
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* ================= FOOTER ================= */

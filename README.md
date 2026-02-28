@@ -39,8 +39,6 @@ RoomSync provides:
 
 - A structured lifestyle questionnaire
 - A transparent rule-based scoring engine
-- Conflict red-flag detection
-- Practical co-living suggestions
 
 Instead of only giving a number, RoomSync explains _why_ two roommates may clash and what they can do about it.
 
@@ -113,6 +111,10 @@ This:
 
 ### 📄 1. Landing Page (`/`)
 
+#### Preview
+
+![Landing Page](./screenshots/homepage_preview.png)
+
 - Introduction to RoomSync
 - Problem explanation
 - How It Works section
@@ -123,6 +125,10 @@ This:
 ---
 
 ### 📄 2. Compatibility Form Page (`/form`)
+
+#### Preview
+
+![Compatibility Form](./screenshots/forms_page_preview.png)
 
 - Shared form for Roommate A & Roommate B
 - Side-by-side input layout
@@ -136,6 +142,10 @@ This:
 ---
 
 ### 📄 3. Compatibility Report Page (`/result`)
+
+#### Preview
+
+![Compatibility Report](./screenshots/results_page_preview.png)
 
 - Overall compatibility score
 - Compatibility category verdict
@@ -178,6 +188,8 @@ Home → Form → Result → Retake / Home
 
 ## 🔮 Future Improvements
 
+- Conflict red-flag detection
+- Practical co-living suggestions
 - Machine learning-based adaptive scoring
 - User profiles and saved reports
 - Roommate database matching system
@@ -197,13 +209,6 @@ A one-month batch competition focused on technical depth, explainability, and re
 
 - Real-world problem identification
 - UI/UX structuring
-- Backend logic design
 - Explainable algorithm creation
 - Conflict modeling approach
 - Clean routing and structured flow
-
----
-
-## 📌 Note
-
-This project focuses on preventive compatibility analysis and is designed to encourage communication, transparency, and healthier shared living environments.

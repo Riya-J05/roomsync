@@ -98,12 +98,14 @@ body {
 }
 
 .form-card {
-  background-color: #ffffff;
+  background-color: #fcfbf8;
   padding: 60px;
   border-radius: 20px;
   max-width: 900px;
   margin-bottom: 40px; /* Space between form cards */
   box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+  border: 1px solid rgba(101, 121, 147, 0.08); /* subtle blue tint border */
+  box-shadow: 0 15px 40px rgba(101, 121, 147, 0.08); /* soft depth */
 }
 
 .section-header {
@@ -115,7 +117,7 @@ body {
 
 .number {
   font-size: 35px;
-  color: #999;
+  color: #657993;
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
@@ -145,6 +147,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.05);
   min-width: none; /* Allow columns to shrink below 300px if needed */
   box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+}
+
+.column:hover {
+  box-shadow: 0 10px 25px rgba(101, 121, 147, 0.1);
 }
 
 .column h3 {
@@ -210,7 +216,6 @@ body {
 }
 
 /* ================= FOOTER ================= */
-
 footer {
   padding: 40px 60px;
   text-align: center;

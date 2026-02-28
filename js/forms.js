@@ -47,50 +47,36 @@ document
     // comparing sleep
     if (sleepA.value === sleepB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing cleaning habits
     if (cleanFreqA.value === cleanFreqB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing noise
     if (noiseA.value === noiseB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing guests
     if (guestsA.value === guestsB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing food habits
     if (foodA.value === foodB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing smoking habits
     if (smokingA.value === smokingB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // comparing conflict
     if (conflictA.value === conflictB.value) {
       score += 10;
-    } else {
-      score += 0;
     }
 
     // initialising and calculating max score
